@@ -18,6 +18,8 @@ function partitionBooksByBorrowedStatus(books) {
   return borrowedStatus;
 }
 
+// Calls Helper Function FindAuthorById
+  
 function getBorrowersForBook(book, accounts) {
   let borrowed = book.borrows
   let result = borrowed.map((status) => {
