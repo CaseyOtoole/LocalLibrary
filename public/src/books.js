@@ -25,7 +25,7 @@ function getBorrowersForBook(book, accounts) {
     borrowersInfo.returned = status.returned;
     return borrowersInfo;
   })
-  return result;
+  return result.slice(0,10);
 }
 
 module.exports = {
